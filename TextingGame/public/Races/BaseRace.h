@@ -25,6 +25,7 @@ public:
 	virtual ~BaseRace();
 
 	const float GetCurrentHealth() const { return CurrentHealth; }
+	const float GetArmour() const { return Armour; }
 
 public:
 	virtual void Attack(IRace& Target) override;

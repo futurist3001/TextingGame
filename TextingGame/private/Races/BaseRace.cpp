@@ -72,5 +72,5 @@ void BaseRace::Defend() // it will work in the next round
 
 void BaseRace::BoostDamage() // it will work in the next round
 {
-	Damage += BoostDamageCoeficient;
+	Damage *= (1 + BoostDamageCoeficient);
 }

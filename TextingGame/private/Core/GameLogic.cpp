@@ -93,7 +93,9 @@ TryAgain:
 			FuncAIAction(static_cast<EAction>(AIActionChoice));
 
 			std::cout << "Your current health: " << PlayerRace->GetCurrentHealth() << std::endl;
+			std::cout << "Your armour: " << PlayerRace->GetArmour() << std::endl;
 			std::cout << "AI current health: " << AIRace->GetCurrentHealth() << std::endl;
+			std::cout << "AI armour: " << AIRace->GetArmour() << std::endl;
 
 			EndOfTheGame();
 		}

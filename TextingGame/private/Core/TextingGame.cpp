@@ -101,6 +101,8 @@ int main()
 
 	std::cout << "Greetings!\nThis is the arena of the strongest of the strongest.\nHere you can battle with computer and find out who is stronger." << std::endl;
 	std::cout << "Choose what will you do..." << std::endl;
+
+MainMenu:
 	std::cout << "Press \"p\" if you want to play and press \"e\" if you afraid and want to exit." << std::endl;
 
 	char Choice;
@@ -129,5 +131,7 @@ TryAgain_WrongSymbol:
 		goto TryAgain_WrongSymbol;
 	}
 
-	return 0;
+	goto MainMenu;
+
+	//return 0; // this will never execute
 }
